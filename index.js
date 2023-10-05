@@ -1,6 +1,10 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const { v4: uuidV4 } = require('uuid')
+
+app.use(cors())
+
 var data = [{
    uuid: uuidV4(),
    name: "Satish",
